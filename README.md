@@ -1,4 +1,4 @@
-# Animal Detection using CNN with TensorFlow and Keras
+# Image Classification using CNN with TensorFlow and Keras
 
 This project demonstrates an implementation of an image classification model using Convolutional Neural Networks (CNN) with TensorFlow's Keras API. The CNN is designed to classify images into distinct categories by learning features through multiple layers of convolutions and pooling. This repository contains a Jupyter Notebook that trains the model on a dataset of 32x32 pixel images.
 
