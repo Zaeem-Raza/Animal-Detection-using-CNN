@@ -1,4 +1,4 @@
-# Animal Detection using CNN using tensorflow and keras
+# Animal Detection using CNN with TensorFlow and Keras
 
 This project demonstrates an implementation of an image classification model using Convolutional Neural Networks (CNN) with TensorFlow's Keras API. The CNN is designed to classify images into distinct categories by learning features through multiple layers of convolutions and pooling. This repository contains a Jupyter Notebook that trains the model on a dataset of 32x32 pixel images.
 
@@ -13,11 +13,11 @@ This project demonstrates an implementation of an image classification model usi
 
 ## Overview
 
-The notebook demonstrates how to build a CNN for image classification, with potential applications for datasets like CIFAR-10, which contains 10 distinct classes (e.g., airplanes, cars, birds). The model utilizes convolutional and pooling layers to capture spatial features in the images, followed by dense layers to perform the final classification.
+The notebook demonstrates how to build and compare two neural network architectures—an Artificial Neural Network (ANN) and a Convolutional Neural Network (CNN)—for image classification. The model was trained and tested on datasets similar to CIFAR-10, which contains 10 distinct classes (e.g., airplanes, cars, birds). The model utilizes convolutional and pooling layers to capture spatial features in the images, followed by dense layers to perform the final classification.
 
 ## Model Architecture
 
-The architecture used in this project is as follows:
+The architecture used in this project for the CNN model is as follows:
 
 1. **Input Layer**: Accepts images of size 32x32 with 3 color channels (RGB).
 2. **Convolutional Layers**:
@@ -28,7 +28,7 @@ The architecture used in this project is as follows:
     - **Dense**: 64 neurons, ReLU activation.
     - **Output Dense**: 10 neurons (for 10 classes), Softmax activation to output probabilities for each class.
 
-This structure is designed to progressively reduce the spatial dimensions and learn hierarchical representations of the input images, which improves classification accuracy.
+This structure progressively reduces the spatial dimensions and learns hierarchical representations of the input images, which improves classification accuracy.
 
 ## Requirements
 
@@ -65,6 +65,14 @@ These packages provide the necessary functions for building the CNN, visualizing
 
 ## Results
 
-After training, the CNN model should achieve competitive accuracy on test data. The notebook includes visualizations for tracking training and validation accuracy and loss, as well as code to display predictions on sample images. The results will vary based on the dataset used and training parameters, but with CIFAR-10, reasonable classification accuracy can be achieved.
+The project includes performance metrics for both the ANN and CNN models:
 
+- **ANN Model**:
+  - **Accuracy**: 55%
+
+- **CNN Model**:
+  - **Training Accuracy**: 79%
+  - **Test Accuracy**: 69%
+
+The CNN model achieves significantly higher accuracy compared to the ANN, as its convolutional layers are better suited for capturing spatial patterns in image data. The notebook also includes visualizations for tracking training and validation accuracy and loss, as well as code to display predictions on sample images.
 
